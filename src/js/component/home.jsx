@@ -1,8 +1,9 @@
 import React from "react";
-import Card from "./card";
+import { Card } from "./card";
 import Navbar from "./navbar";
 import Jumbotron from "./jumbotron.jsx";
 import Footer from "./footer.jsx";
+import { products } from "./data.jsx";
 
 
 //create your first component
@@ -11,7 +12,13 @@ const Home = () => {
 		<div>
 			<Navbar />
 			<Jumbotron />
-			<Card />
+			<div className="d-flex">
+			{
+				products.map((item) => {
+					return <Card key={item.title} title={item.title} description={item.description} cta={item.cta} />
+				})
+			}
+			</div>
 			<Footer />
 		</div>
 	);
