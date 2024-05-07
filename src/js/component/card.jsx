@@ -3,8 +3,8 @@ import React from "react";
 export const Card = (props) => {
     return (
         <>
-            <div className="row m-2">
-                <div className="col-md-12 mb-3">
+            <div className="mb-3 col-12 col-xl-3  m-1 my-2 p-2" style={{ width: "25rem" }}>
+                <div>
                     <div className="card text-center">
                         <img src="https://images.wallpapersden.com/image/download/spider-man-pixel-art_a2luZmqUmZqaraWkpJRqZWWtamVl.jpg" className="card-img-top h-100" alt="..." />
                         <div className="card-body">

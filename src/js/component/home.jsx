@@ -6,16 +6,17 @@ import Footer from "./footer.jsx";
 import { products } from "./data.jsx";
 
 
+
 //create your first component
 const Home = () => {
 	return (
 		<div>
 			<Navbar />
 			<Jumbotron />
-			<div className="d-flex">
+			<div className="d-flex row text-center justify-content-evenly m-2 p-3 mx-0 flex-wrap">
 			{
 				products.map((item) => {
-					return <Card key={item.title} title={item.title} description={item.description} cta={item.cta} />
+					return <Card key={item.title} title={item.title} description={item.description} cta={item.cta}/>
 				})
 			}
 			</div>
